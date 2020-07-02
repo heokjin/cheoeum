@@ -1,0 +1,29 @@
+{{template "header" .}}
+
+        <!-- Product Catagories Area Start -->
+        <div class="products-catagories-area clearfix">
+            <div class="amado-pro-catagory clearfix">
+
+              {{range .SingleCatagory}}
+              <div class="single-products-catagory clearfix">
+                  <a href="{{.Href}}">
+                      <img src="{{.ImgSrc}}" alt="">
+                      <!-- Hover Content -->
+                      <div class="hover-content">
+                          <div class="line"></div>
+                          <p>{{.Price}}</p>
+                          <h4>{{.CatagoryName}}</h4>
+                      </div>
+                  </a>
+              </div>
+            {{end}}
+                
+            </div>
+        </div>
+        <!-- Product Catagories Area End -->
+    </div>
+    <!-- ##### Main Content Wrapper End ##### -->
+
+    {{template "newsletter" .}}
+    {{template "footer" .}}
+

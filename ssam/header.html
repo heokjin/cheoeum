@@ -1,0 +1,72 @@
+{{define "header"}}
+  <!DOCTYPE html>
+  <html lang="ko">
+  
+  <head>
+      <meta charset="UTF-8">
+      <meta name="description" content="">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  
+      <!-- Title  -->
+      <title>쌤쌤맘 - 쌤쌤맘의 핸드메이드</title>
+  
+      <!-- Favicon  -->
+      <link rel="icon" href="img/core-img/favicon.ico">
+  
+      <!-- Core Style CSS -->
+      <link rel="stylesheet" href="css/core-style.css">
+      <link rel="stylesheet" href="css/style.css">
+  
+  </head>
+  
+  <body>
+    <!-- ##### Main Content Wrapper Start ##### -->
+    <div class="main-content-wrapper d-flex clearfix">
+
+        <!-- Mobile Nav (max width 767px)-->
+        <div class="mobile-nav">
+            <!-- Navbar Brand -->
+            <div class="amado-navbar-brand">
+                <a href="/"><img src="img/ssam-core-img/logo.png" alt=""></a>
+            </div>
+            <!-- Navbar Toggler -->
+            <div class="amado-navbar-toggler">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+
+        <!-- Header Area Start -->
+        <header class="header-area clearfix">
+            <!-- Close Icon -->
+            <div class="nav-close">
+                <i class="fa fa-close" aria-hidden="true"></i>
+            </div>
+            <!-- Logo -->
+            <div class="logo">
+                <a href="/"><img src="img/ssam-core-img/logo.png" alt=""></a>
+            </div>
+            <!-- Amado Nav -->
+            <nav class="amado-nav">
+                <ul>
+                    <li class="active"><a href="/">Home</a></li>
+                    <li><a href="/shop/shoes">Shop</a></li>
+{{/*                    <li><a href="/cart">Cart</a></li>*/}}
+{{/*                    <li><a href="/checkout">Checkout</a></li>*/}}
+                </ul>
+            </nav>
+          
+            <!-- Cart Menu -->
+            <div class="cart-fav-search mb-100">
+                <a href="/cart" class="cart-nav"><img src="img/core-img/cart.png" alt=""> Cart <span>(0)</span></a>
+            </div>
+            <!-- Social Button -->
+            <div class="social-info d-flex justify-content-between">
+                <a href="https://www.instagram.com/samsammom_handmade/?hl=ko"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://smartstore.naver.com/samsammom"><i class="fa fa-home" aria-hidden="true"></i></a>
+            </div>
+        </header>
+        <!-- Header Area End -->
+        
+{{end}}  
