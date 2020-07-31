@@ -4,6 +4,7 @@ import (
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/postgres"
 	"log"
+	"os"
 )
 
 var (
@@ -12,8 +13,8 @@ var (
 
 func InitDB() {
 	var err  error
-	//db, err := gorm.Open("postgres", os.Getenv("DATABASE_URL"))
-	db, err = gorm.Open("postgres", "host=127.0.0.1 port=5432 dbname=scott sslmode=disable")
+	db, err := gorm.Open("postgres", os.Getenv("DATABASE_URL"))
+	//db, err = gorm.Open("postgres", "host=127.0.0.1 port=5432 dbname=scott sslmode=disable")
 	if err != nil {
 		log.Println("Got error when connect database", err)
 	}
