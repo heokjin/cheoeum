@@ -19,7 +19,7 @@ func main() {
 	}
 
 	model.InitDB()
-	model.InitSchema()
+	//model.InitSchema()
 
 	fmt.Println("TEST1")
 	t := &Template{
