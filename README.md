@@ -60,6 +60,9 @@ $ heroku git:remote -a cheoeum
 $ git add .
 $ git commit -am "make it better"
 $ git push heroku master
+git push -u origin master //github쪽으로 배포하기
+로그보기
+heroku logs -a cheoeum -t
 ```
 or
 
